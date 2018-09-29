@@ -1,0 +1,271 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Guass</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="container-fluid">
+      <div class="row top-buffer">
+        <div class="col-md-3">
+          <img src="img/logo.jpg" class="img-thumbnail logo-padding">
+        </div>
+        <div class="col-md-9">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner carousel-Height">
+              <div class="carousel-item active">
+                <img src="img/la.jpg" alt="Los Angeles">
+              </div>
+              <div class="carousel-item">
+                <img src="img/chicago.jpg" alt="Chicago">
+              </div>
+              <div class="carousel-item">
+                <img src="img/ny.jpg" alt="New York">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row top-buffer">
+        <div class="col-md-6">
+          <a href="#">
+            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
+              data-toggle="modal" data-target="#NewPatientModal"></div>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="#">
+            <div class="box" style="background: url(img/NewPatient.png) no-repeat center center;background-color: #2ccd70; "></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- The Modal -->
+  <div class="modal" id="NewPatientModal">
+    <div class="modal-dialog dialog-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">New Patient</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#Patient-Detail">Patient Detail</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#GP">GP/Specialist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#Medical-Condition">Medical Condition</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#Personal-Carer">Personal Carer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#menu4">Service provider</a>
+            </li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <div class="form-group">
+                <label for="Family-Name" class="col-form-label">Family Name:</label>
+                <input type="text" class="form-control" id="Family-Name">
+              </div>
+              <div class="form-group">
+                <label for="Given-Name" class="col-form-label">Given Name:</label>
+                <input type="text" class="form-control" id="Given-Name">
+              </div>
+              <div class="form-group">
+                <label for="Nick-Name" class="col-form-label">Nick Name:</label>
+                <input type="text" class="form-control" id="Nick-Name">
+              </div>
+              <div class="form-group">
+                <label for="Date-of-Birth" class="col-form-label">Date of Birth:</label>
+                <input type="date" class="form-control" id="Date-of-Birth">
+              </div>
+              <div class="form-group">
+                <label for="Address" class="col-form-label">Address:</label>
+                <input type="text" class="form-control" id="Address">
+              </div>
+              <div class="form-group">
+                <label for="Phone" class="col-form-label">Phone:</label>
+                <input type="number" class="form-control" id="Phone">
+              </div>
+              <div class="form-group">
+                <label for="Email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="Email">
+              </div>
+              <div class="form-group">
+                <label for="Email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="Email">
+              </div>
+              <div class="form-group">
+                <label for="Languages" class="col-form-label">Languages:</label>
+                <select class="form-control" id="Languages">
+                  <option>English</option>
+                  <option>Chinese</option>
+                  <option>French</option>
+                  <option>Spanish</option>
+                </select>
+              </div>
+            </div>
+            <div id="GP" class="container tab-pane fade"><br>
+              <div class="form-group">
+                <label for="Doctor-Name" class="col-form-label">Doctor's Name:</label>
+                <input type="text" class="form-control" id="Doctor">
+              </div>
+              <div class="form-group">
+                <label for="Clinic" class="col-form-label">Clinic:</label>
+                <input type="text" class="form-control" id="Clinic">
+              </div>
+              <div class="form-group">
+                <label for="Contact-Detail" class="col-form-label">Contact Detail:</label>
+                <input type="text" class="form-control" id="Contact-Detail">
+              </div>
+            </div>
+            <script src="js/main.js"></script>
+            <div id="Medical-Condition" class="container tab-pane fade">
+              <div class="form-group">
+                <label for="Clinic" class="col-form-label">Major medical conditions:</label>
+                <div>
+                  <select data-placeholder="Please Type..." class="chosen-select" multiple>
+                    <option value=""></option>
+                    <option>Arthritis</option>
+                    <option>Hypertension</option>
+                    <option>Asthma</option>
+                    <option>Blindness</option>
+                    <option>Dementia</option>
+                    <option>Chronic Bronchitis</option>
+                    <option>Bronchitis</option>
+                    <option>Coronary heart disease</option>
+                    <option>Epilepsy</option>
+                    <option>Diabets</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Clinic" class="col-form-label">Allergies:</label>
+                <div>
+                  <select data-placeholder="Please Type..." class="chosen-select" multiple>
+                    <option value=""></option>
+                    <optgroup label="Food Allergies">
+                      <option>Egg</option>
+                      <option>Nuts</option>
+                      <option>Gluten</option>
+                      <option>milk</option>
+                    </optgroup>
+                    <optgroup label="Second Allergies">
+                      <option>sample 1</option>
+                      <option>sample 2</option>
+                      <option>sample 3</option>
+                      <option>sample 4</option>
+                    </optgroup>
+                    <optgroup label="Pet Allergies">
+                      <option>sample 1</option>
+                      <option>sample 2</option>
+                      <option>sample 3</option>
+                      <option>sample 4</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="Likes" class="col-form-label">Likes:</label>
+                <input type="text" class="form-control" id="Likes">
+              </div>
+
+              <div class="form-group">
+                <label for="Dislikes" class="col-form-label">Dislikes:</label>
+                <input type="text" class="form-control" id="Dislikes">
+              </div>
+              <div class="form-group">
+                <label for="Diet" class="col-form-label">Diet: </label>:</label>
+                <input type="text" class="form-control" id="Diet">
+              </div>
+
+              <div id="Personal-Carer" class="container tab-pane fade">
+                <div class="form-group">
+                  <label for="Likes" class="col-form-label">Likes:</label>
+                  <input type="text" class="form-control" id="Likes">
+                </div>
+              </div>
+              <div id="Service-Provider" class="container tab-pane fade">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+  <!-- Modal  -->
+  </div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
