@@ -66,8 +66,8 @@
       <div class="row top-buffer">
         <div class="col-md-6">
           <a href="#">
-            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
-              data-toggle="modal" data-target="#NewPatientModal"></div>
+            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;" data-toggle="modal"
+              data-target="#NewPatientModal"></div>
           </a>
         </div>
         <div class="col-md-6">
@@ -108,13 +108,14 @@
               <a class="nav-link" data-toggle="tab" href="#Personal-Carer">Personal Carer</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#menu4">Service provider</a>
+              <a class="nav-link" data-toggle="tab" href="#Service-Provider">Service provider</a>
             </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div id="home" class="container tab-pane active"><br>
+            <div id="home" class="container tab-pane active">
+              <br>
               <div class="form-group">
                 <label for="Family-Name" class="col-form-label">Family Name:</label>
                 <input type="text" class="form-control" id="Family-Name">
@@ -157,7 +158,8 @@
                 </select>
               </div>
             </div>
-            <div id="GP" class="container tab-pane fade"><br>
+            <div id="GP" class="container tab-pane fade">
+              <br>
               <div class="form-group">
                 <label for="Doctor-Name" class="col-form-label">Doctor's Name:</label>
                 <input type="text" class="form-control" id="Doctor">
@@ -240,7 +242,34 @@
                 </div>
               </div>
               <div id="Service-Provider" class="container tab-pane fade">
-
+                <div class="form-group">
+                  <label for="Day" class="col-form-label">Day:</label>
+                  <input type="text" class="form-control" id="Day">
+                </div>
+                <div class="form-group">
+                  <label for="Specialist-Contact" class="col-form-label">Service:</label>
+                  <select>
+                    <option value="1">Residential</option>
+                    <option value="2">Family Aged Care</option>
+                    <option value="2">Assessment Service</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Workers-Name" class="col-form-label">Workers Name:</label>
+                  <select id="Workers-Name">
+                    <option value="1">Smith</option>
+                    <option value="2">JONES</option>
+                    <option value="2">WILLIAMS</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="Contact-Detail" class="col-form-label">Contact Detail:</label>
+                  <input type="text" class="form-control" id="Contact-Detail">
+                </div>
+                <div class="form-group">
+                  <label for="Service-Detail" class="col-form-label">Service Detail:</label>
+                  <input type="text" class="form-control" id="Service-Detail">
+                </div>
               </div>
             </div>
           </div>
