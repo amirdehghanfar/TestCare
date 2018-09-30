@@ -66,8 +66,8 @@
       <div class="row top-buffer">
         <div class="col-md-6">
           <a href="#">
-            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;" data-toggle="modal"
-              data-target="#NewPatientModal"></div>
+            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
+              data-toggle="modal" data-target="#NewPatientModal"></div>
           </a>
         </div>
         <div class="col-md-6">
@@ -82,7 +82,7 @@
 
   <!-- The Modal -->
   <div class="modal" id="NewPatientModal">
-    <div class="modal-dialog dialog-lg">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
 
         <!-- Modal Header -->
@@ -174,7 +174,7 @@
               </div>
               <div class="form-group">
                 <label for="Specialist-Contact" class="col-form-label">Service:</label>
-                <select>
+                <select class="chosen-select">
                   <option value="1">Residential</option>
                   <option value="2">Family Aged Care</option>
                   <option value="2">Assessment Service</option>
@@ -182,14 +182,14 @@
               </div>
               <div class="form-group">
                 <label for="Workers-Name" class="col-form-label">Workers Name:</label>
-                <select id="Workers-Name">
+                <select id="Workers-Name" class="chosen-select">
                   <option value="1">Smith</option>
                   <option value="2">JONES</option>
                   <option value="2">WILLIAMS</option>
                 </select>
               </div>
             </div>
-            <script src="js/main.js"></script>
+
             <div id="Medical-Condition" class="container tab-pane fade">
               <div class="form-group">
                 <label for="Clinic" class="col-form-label">Major medical conditions:</label>
@@ -222,7 +222,7 @@
                       <option>Gluten</option>
                       <option>milk</option>
                     </optgroup>
-                    <optgroup label="Second Allergies">
+                    <optgroup label="seasonal Allergies">
                       <option>sample 1</option>
                       <option>sample 2</option>
                       <option>sample 3</option>
@@ -250,42 +250,100 @@
                 <label for="Diet" class="col-form-label">Diet: </label>:</label>
                 <input type="text" class="form-control" id="Diet">
               </div>
+            </div>
+            <div id="Personal-Carer" class="container tab-pane fade">
 
-              <div id="Personal-Carer" class="container tab-pane fade">
-                <div class="form-group">
-                  <label for="Likes" class="col-form-label">Likes:</label>
-                  <input type="text" class="form-control" id="Likes">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                      Primary Carer
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="collapse " data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="Name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="Phone" class="col-form-label">Phone:</label>
+                        <input type="number" class="form-control" id="Phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="Email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="Relation" class="col-form-label">Relation:</label>
+                        <input type="text" class="form-control" id="Relation">
+                      </div>
+                      <div class="form-group">
+                        <label for="Date-Of-Birth" class="col-form-label">Date Of Birth:</label>
+                        <input type="date" class="form-control" id="Date-Of-Birth">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                      Next Of Kin
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                      <div class="form-group">
+                        <label for="Name" class="col-form-label">Name:</label>
+                        <input type="text" class="form-control" id="Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="Phone" class="col-form-label">Phone:</label>
+                        <input type="number" class="form-control" id="Phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="Email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="Email">
+                      </div>
+                      <div class="form-group">
+                        <label for="Relation" class="col-form-label">Relation:</label>
+                        <input type="text" class="form-control" id="Relation">
+                      </div>
+                      <div class="form-group">
+                        <label for="Date-Of-Birth" class="col-form-label">Date Of Birth:</label>
+                        <input type="date" class="form-control" id="Date-Of-Birth">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div id="Service-Provider" class="container tab-pane fade">
-                <div class="form-group">
-                  <label for="Day" class="col-form-label">Day:</label>
-                  <input type="text" class="form-control" id="Day">
-                </div>
 
-                <div class="form-group">
-                  <label for="Contact-Detail" class="col-form-label">Contact Detail:</label>
-                  <input type="text" class="form-control" id="Contact-Detail">
-                </div>
-                <div class="form-group">
-                  <label for="Service-Detail" class="col-form-label">Service Detail:</label>
-                  <input type="text" class="form-control" id="Service-Detail">
-                </div>
+            </div>
+            <div id="Service-Provider" class="container tab-pane fade">
+              <div class="form-group">
+                <label for="Name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="Name">
+              </div>
+              <div class="form-group">
+                <label for="Phone" class="col-form-label">Phone:</label>
+                <input type="number" class="form-control" id="Phone">
+              </div>
+              <div class="form-group">
+                <label for="Email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="Email">
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
-          <i class="fa fa-plus" aria-hidden="true"></i>
-        </button>
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </div>
-
-
-
+  </div>
   </div>
   </div>
   <!-- Modal  -->
