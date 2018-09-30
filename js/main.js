@@ -1,5 +1,14 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
     console.log("App started");
-    $(".chosen-select").chosen({no_results_text: "Oops, nothing found!",width: "100%"})
+
+    $("#currentPatientTable tr").click(function () {
+        alert("aa");
+        $.mobile.changePage("Patient.html",{transition:"slide"});
+        //window.location.href = "Patient.Html"
+    });
+
+    $(".chosen-select").chosen({ no_results_text: "Oops, nothing found!", width: "100%" });
+
+
 })
