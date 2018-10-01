@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $("#currentPatientTable tr").click(function () {
         
-        window.location.href = "Patient.Html"
+        window.location.href = "Patient.html"
     });
 
     $(".chosen-select").chosen({ no_results_text: "Oops, nothing found!", width: "100%" });

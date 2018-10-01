@@ -116,6 +116,9 @@ textarea {
    .rounded-button{
     border-radius: 50%;
    }
+   #weekly-Service-Planner tr{
+       height: 45px;
+   }
 
 
 
