@@ -10,35 +10,69 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body style="display: none">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1>Current patient</h1> 
+          <div class="row">
+            <div class="col-3">
+                <img src="img/old-woman.png">
+            </div>
+            <div class="col-9"></div>
+          </div>     
+        </div>
+      </div>
     <div class="container-fluid">
         <div class="row top-buffer">
             <div class="col-md-6 col-6">
                 <a href="#">
-                    <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
-                        data-toggle="modal" data-target="#NewPatientModal"></div>
+                    <div class="box" style="background: url(img/patientDetail.png) no-repeat center center;background-color: #2d86c0;"
+                        data-toggle="modal" data-target="#NewPatientModal">
+                        <span class="box-Text">
+                            <h2>Detail</h2>
+                        </span>
+                    </div>
                 </a>
             </div>
             <div class="col-md-6 col-6">
                 <a href="CurrentPatient.html">
-                    <div class="box" style="background: url(img/NewPatient.png) no-repeat center center;background-color: #2ccd70; "></div>
+                    <div class="box" style="background: url(img/DailyRoutine.png) no-repeat center center;background-color: #2ccd70; ">
+                        <span class="box-Text">
+                            <h2>Daily Routine</h2>
+                        </span>
+                    </div>
                 </a>
             </div>
         </div>
         <div class="row top-buffer">
             <div class="col-md-6 col-6">
                 <a href="#">
-                    <div class="box" style="background: url(img/doctor.png) no-repeat center center;background-color: #f2c311;"
-                        data-toggle="modal" data-target="#NewPatientModal"></div>
+                    <div class="box" style="background: url(img/WeeklyServices.png) no-repeat center center;background-color: #e74b3c;"
+                        data-toggle="modal" data-target="#NewPatientModal">
+                        <span class="box-Text">
+                            <h2>Weekly Services</h2>
+                        </span>
+                    </div>
                 </a>
             </div>
             <div class="col-md-6 col-6">
                 <a href="pages/CurrentPatient.html">
-                    <div class="box" style="background: url(img/dentist.png) no-repeat center center;background-color: #e74b3c; "></div>
+                    <div class="box" style="background: url(img/ImportantDate.png) no-repeat center center;background-color: #f2c311; ">
+                        <span class="box-Text">
+                            <h2>Important Date</h2>
+                        </span>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
+
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
