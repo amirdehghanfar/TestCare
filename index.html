@@ -21,54 +21,33 @@
 </head>
 
 <body style="display: none">
-  
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+      <img height="256px" src="img/logo.jpg" class="img-thumbnail">
+    </a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Link 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link 3</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="main-container">
-    <div class="container-fluid">
-      <div class="row top-buffer">
-        <div class="col-md-3 col-3">
-          <img src="img/logo.jpg" class="img-thumbnail logo-padding">
-        </div>
-        <div class="col-md-9 col-9">
-          <div id="demo" class="carousel slide" data-ride="carousel">
-
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner carousel-Height">
-              <div class="carousel-item active">
-                <img src="img/la.jpg" alt="Los Angeles">
-              </div>
-              <div class="carousel-item">
-                <img src="img/chicago.jpg" alt="Chicago">
-              </div>
-              <div class="carousel-item">
-                <img src="img/ny.jpg" alt="New York">
-              </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </a>
-
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="container-fluid">
       <div class="row top-buffer">
         <div class="col-md-6 col-6">
           <a href="#">
-            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
-              data-toggle="modal" data-target="#NewPatientModal">
+            <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;" data-toggle="modal"
+              data-target="#NewPatientModal">
               <span class="box-Text">
                 <h2>New patient</h2>
               </span>
@@ -76,8 +55,9 @@
           </a>
         </div>
         <div class="col-md-6 col-6">
-          <a href="CurrentPatient.html">
-            <div class="box" style="background: url(img/NewPatient.png) no-repeat center center;background-color: #2ccd70; ">
+          <a href="#">
+            <div class="box" style="background: url(img/NewPatient.png) no-repeat center center;background-color: #2ccd70; " data-toggle="modal"
+              data-target="#CurrentPatient">
               <span class="box-Text">
                 <h2>Current patient</h2>
               </span>
@@ -88,8 +68,8 @@
       <div class="row top-buffer">
         <div class="col-md-6 col-6">
           <a href="#">
-            <div class="box" style="background: url(img/doctor.png) no-repeat center center;background-color: #f2c311;"
-              data-toggle="modal" data-target="#NewPatientModal"></div>
+            <div class="box" style="background: url(img/doctor.png) no-repeat center center;background-color: #f2c311;" data-toggle="modal"
+              data-target="#NewPatientModal"></div>
           </a>
         </div>
         <div class="col-md-6 col-6">
@@ -380,3 +360,61 @@
 </body>
 
 </html>
+
+<!-- The Modal -->
+<div class="modal" id="CurrentPatient">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Weekly Service Planner</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="padding: 5px">
+          <table class="table table-striped" id="currentPatientTable">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="img/old-woman.png" class="Image-In-Table"></td>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
