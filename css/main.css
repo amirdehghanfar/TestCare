@@ -99,6 +99,9 @@ textarea {
 .main-container {
   padding: 20px;
 }
+.ClickableTable tr{
+  cursor: pointer;
+}
 .top-buffer {
   margin-top: 20px;
 }
@@ -133,6 +136,7 @@ textarea {
 .Image-In-Table {
   height: 32px;
 }
+
 
 /* ==========================================================================
    Helper classes

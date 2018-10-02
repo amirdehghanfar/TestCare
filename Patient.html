@@ -16,7 +16,7 @@
         <div class="row top-buffer">
             <div class="col-md-6 col-6">
                 <a href="#">
-                    <div class="box" style="background: url(img/patientDetail.png) no-repeat center center;background-color: #2d86c0;"
+                    <div class="box" style="background: url(img/PatientDetail.png) no-repeat center center;background-color: #2d86c0;"
                         data-toggle="modal" data-target="#CurrentPatient">
                         <span class="box-Text">
                             <h2>Detail</h2>
@@ -47,10 +47,33 @@
                 </a>
             </div>
             <div class="col-md-6 col-6">
-                <a href="pages/CurrentPatient.html">
-                    <div class="box" style="background: url(img/ImportantDate.png) no-repeat center center;background-color: #f2c311; ">
+                <a href="#">
+                    <div class="box" style="background: url(img/ImportantDate.png) no-repeat center center;background-color: #f2c311; "
+                        data-toggle="modal" data-target="#ImportantDateModal">
                         <span class="box-Text">
                             <h2>Important Date</h2>
+                        </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row top-buffer">
+            <div class="col-md-6 col-6">
+                <a href="#">
+                    <div class="box" style="background: url(img/appointment.png) no-repeat center center;background-color: #2ccd70;"
+                        data-toggle="modal" data-target="#AppointmentModal">
+                        <span class="box-Text">
+                            <h2>Appointment</h2>
+                        </span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-6">
+                <a href="#">
+                    <div class="box" style="background: url(img/Document.png) no-repeat center center;background-color: #2d86c0; "
+                        data-toggle="modal" data-target="#DocumentModal">
+                        <span class="box-Text">
+                            <h2>Document</h2>
                         </span>
                     </div>
                 </a>
@@ -59,7 +82,7 @@
     </div>
 
     <!-- The Modal -->
-    <div class="modal" id="CurrentPatient">
+    <div class="modal fade" id="CurrentPatient">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
@@ -156,7 +179,7 @@
 
 </html>
 <!-- The Modal -->
-<div class="modal" id="DailyRoutineModal">
+<div class="modal fade" id="DailyRoutineModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
@@ -194,7 +217,7 @@
 </div>
 
 <!-- The Modal -->
-<div class="modal" id="WeeklyServicePlannerModal">
+<div class="modal fade" id="WeeklyServicePlannerModal">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
 
@@ -343,14 +366,327 @@
                             </tr>
                         </tbody>
                     </table>
+                    <div class="row">
+                        <div class="col-6" style="padding-right: 0">
+                            <table style="border: 1px solid #dee2e6" class="table table-borderless" id="weekly-Service-Planner">
+                                <thead style="background-color: #ccc">
+                                    <tr>
+                                        <th><strong>Date Range </strong> commence:</th>
+                                        <th>Conclude: </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Service Type:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Provider:</td>
+                                        <td>Contact:</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-6" style="padding-left: 0">
+                            <table style="border: 1px solid #dee2e6" class="table table-borderless" id="weekly-Service-Planner">
+                                <thead style="background-color: #ccc">
+                                    <tr>
+                                        <th><strong>Date Range </strong> commence:</th>
+                                        <th>Conclude: </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Service Type:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Provider:</td>
+                                        <td>Contact:</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
-                    <i class="fa fa-plus" aria-hidden="true"></i>
-                </button>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- The Modal ImportantDate-->
+<div class="modal fade" id="ImportantDateModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Weekly Service Planner</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div style="padding: 5px">
+
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    Frequently Used Number
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse " data-parent="#accordion">
+                                <div class="card-body">
+
+                                    <table class="table table-striped table-bordered" id="weekly-Service-Planner">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Contact Number </th>
+                                                <th>Email </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Joe king</td>
+                                                <td>+61352769</td>
+                                                <td>myEmail@yahoo.com</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    Important Date
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table class="table table-striped table-bordered" id="weekly-Service-Planner">
+                                        <thead>
+                                            <tr>
+                                                <th>Occasion</th>
+                                                <th>Date </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+                                            <tr>
+                                                <td>emma Birthday</td>
+                                                <td>2018/01/01</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- The Modal Appointment -->
+<div class="modal fade" id="AppointmentModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Appointment</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div style="padding: 5px">
+
+
+                    <table class="table table-striped table-bordered" id="weekly-Service-Planner">
+                        <thead>
+                            <tr>
+                                <th>Day/Date</th>
+                                <th>Time</th>
+                                <th>Purpose </th>
+                                <th>Location/Address </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                            <tr>
+                                <td>sunday</td>
+                                <td>14:30</td>
+                                <td>dental services</td>
+                                <td>Patient's home</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- The Modal Document -->
+<div class="modal fade" id="DocumentModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Document</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div style="padding: 5px">
+                    <div class="form-group">
+                        <label for="Document-Name" class="col-form-label">Document Name:</label>
+                        <input type="text" class="form-control" id="Document-Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Document-File" class="col-form-label">Document File:</label>
+                        <input type="file" class="form-control-file" id="Document-File">
+                    </div>
+                    <div class="form-group">
+                        <label for="Date" class="col-form-label">Date:</label>
+                        <input type="date" class="form-control" id="Date">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+
             </div>
 
         </div>
