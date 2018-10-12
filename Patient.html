@@ -28,8 +28,18 @@
             <li class="nav-item">
                 <a class="nav-link" href="#">Nurses</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Management</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Management
+                </a>
+                <div class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Report</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Self Assessment</a>
+                        <a class="dropdown-item" href="#">Report Generator</a>
+                    </div>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="login.html">Log in</a>
@@ -240,15 +250,18 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label for="Mornings" class="col-form-label">Mornings:</label>
-                    <textarea class="form-control" id="Mornings"></textarea>
+                    <textarea class="form-control" id="Mornings">20 minutes walking (2 hours after breakfast)
+                    </textarea>
                 </div>
                 <div class="form-group">
                     <label for="Afternoons" class="col-form-label">Afternoons:</label>
-                    <textarea class="form-control" id="Afternoons"></textarea>
+                    <textarea class="form-control" id="Afternoons"> 20 minutes walking &#13;&#10 20 minutes group activities
+                    </textarea>
                 </div>
                 <div class="form-group">
-                    <label for="Afternoons" class="col-form-label">Afternoons:</label>
-                    <textarea class="form-control" id="Afternoons"></textarea>
+                    <label for="Evinings" class="col-form-label">Evinings:</label>
+                    <textarea class="form-control" id="Evinings">30-45 minutes, TV Room                        
+                    </textarea>
                 </div>
             </div>
 
@@ -302,7 +315,17 @@
                                 <td></td>
                             </tr>
                             <tr>
+                                <td>8:00</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
+                                <td>Breakfast</td>
                                 <td></td>
+                            </tr>
+                            <tr>
+                                <td>9:00</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -312,7 +335,17 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
+                                <td>10:00</td>
+                                <td>Morning stretch</td>
+                                <td>Chair dancing</td>
+                                <td>Yoga</td>
+                                <td>Fit-For-Life</td>
+                                <td>Chair dancing</td>
+                                <td>Yoga</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11:00</td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -322,24 +355,14 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>12:00</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
+                                <td>Lunch</td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -362,34 +385,34 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>13:30</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>Afternoon Stretch & Trivia</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>Afternoon Snack</td>
+                                <td>-</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>3:00</td>
+                                <td>TV Room</td>
+                                <td>Library</td>
+                                <td>Game Room</td>
+                                <td>TV Room</td>
+                                <td>Library</td>
+                                <td>TV Room</td>
+                                <td>Game Room</td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -475,7 +498,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Weekly Service Planner</h4>
+                <h4 class="modal-title">Important Date</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -564,34 +587,17 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
+                                                <td>Wedding anneiversory</td>
+                                                <td>1979/11/25</td>
                                             </tr>
                                             <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
+                                                <td>My Wife brithday</td>
+                                                <td>1940/01/05</td>
                                             </tr>
                                             <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
+                                                <td>First Home Buy</td>
+                                                <td>1995/01/06</td>
                                             </tr>
-                                            <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
-                                            </tr>
-                                            <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
-                                            </tr>
-                                            <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
-                                            </tr>
-                                            <tr>
-                                                <td>emma Birthday</td>
-                                                <td>2018/01/01</td>
-                                            </tr>
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -641,52 +647,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>sunday</td>
+                                <td>2018/01/10 - Monday </td>
                                 <td>14:30</td>
                                 <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
-                            </tr>
-                            <tr>
-                                <td>sunday</td>
-                                <td>14:30</td>
-                                <td>dental services</td>
-                                <td>Patient's home</td>
+                                <td>723 Swanstom st, Caralton V3C 3010</td>
                             </tr>
                         </tbody>
                     </table>
@@ -747,7 +711,7 @@
 
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Medication schadule</h4>
+                <h4 class="modal-title">Medication Schedule</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
 
@@ -768,60 +732,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
+                                <td>Asprin</td>
+                                <td>Tablet</td>
+                                <td>Everyday</td>
+                                <td>8:00</td>
+                                <td>1</td>
                             </tr>
                             <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
+                                <td>Bepotastine</td>
+                                <td>Eye drops</td>
+                                <td>everyday</td>
+                                <td>21:00</td>
+                                <td>2</td>
                             </tr>
                             <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
-                            </tr>
-                            <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
-                            </tr>
-                            <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
-                            </tr>
-                            <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
-                            </tr>
-                            <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
-                            </tr>
-                            <tr>
-                                <td>eyes drops</td>
-                                <td>drop</td>
-                                <td>sunday</td>
-                                <td>2019/01/01</td>
-                                <td>three</td>
+                                <td>Gliclazide</td>
+                                <td>Tablet</td>
+                                <td>everyday</td>
+                                <td>9:00 - 14:00</td>
+                                <td>2</td>
                             </tr>
                         </tbody>
                     </table>

@@ -38,12 +38,22 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Nurses</a>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Management
+        </a>
+        <div class="dropdown-menu dropdown-submenu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Report</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Self Assessment</a>
+            <a class="dropdown-item" href="#">Report Generator</a>
+          </div>
+        </div>
+      </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Management</a>
-    </li>
-      <li class="nav-item">
-          <a class="nav-link" href="login.html">Log in</a>
-        </li>
+        <a class="nav-link" href="login.html">Log in</a>
+      </li>
     </ul>
   </nav>
 
@@ -55,7 +65,7 @@
             <div class="box" style="background: url(img/currentPatient.png) no-repeat center center;background-color: #2d86c0;"
               data-toggle="modal" data-target="#NewPatientModal">
               <span class="box-Text">
-                <h2>New patient</h2>
+                <h2>New patients</h2>
               </span>
             </div>
           </a>
@@ -65,7 +75,7 @@
             <div class="box" style="background: url(img/NewPatient.png) no-repeat center center;background-color: #2ccd70; "
               data-toggle="modal" data-target="#CurrentPatient">
               <span class="box-Text">
-                <h2>Current patient</h2>
+                <h2>Current patients</h2>
               </span>
             </div>
           </a>
@@ -75,15 +85,16 @@
         <div class="col-md-6 col-6">
           <a href="#">
             <div class="box" style="background: url(img/Medication-list.png) no-repeat center center;background-color: #f2c311;"
-              data-toggle="modal" data-target="#NewPatientModal">
+              data-toggle="modal" data-target="#Medication">
               <span class="box-Text">
-                <h2>Medication List</h2>
+                <h2>Medication</h2>
               </span></div>
           </a>
         </div>
         <div class="col-md-6 col-6">
-          <a href="pages/CurrentPatient.html">
-            <div class="box" style="background: url(img/Room-Allocation.png) no-repeat center center;background-color: #e74b3c; ">
+          <a href="#">
+            <div class="box" style="background: url(img/Room-Allocation.png) no-repeat center center;background-color: #e74b3c; "
+              data-toggle="modal" data-target="#Room-Allocation">
               <span class="box-Text">
                 <h2>Room Allocation</h2>
               </span>
@@ -412,21 +423,134 @@
             <tbody>
               <tr>
                 <td><img src="img/old-man.png" class="Image-In-Table"></td>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-              </tr>
-              <tr>
-                <td><img src="img/old-Woman.png" class="Image-In-Table"></td>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
+                <td>Guy</td>
+                <td>Pearce</td>
+                <td>Pearce@live.com</td>
               </tr>
               <tr>
                 <td><img src="img/man.png" class="Image-In-Table"></td>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
+                <td>Bryan</td>
+                <td>Brown</td>
+                <td>Brown@yahoo.com</td>
+              </tr>
+              <tr>
+                <td><img src="img/old-Woman.png" class="Image-In-Table"></td>
+                <td>Jacki</td>
+                <td>Weaver</td>
+                <td>JackieWeaver@yahoo.com</td>
+              </tr>
+              <tr>
+                <td><img src="img/old-Woman.png" class="Image-In-Table"></td>
+                <td>Judy</td>
+                <td>Davis</td>
+                <td>Judi@Gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- The Modal - Medication -->
+<div class="modal fade" id="Medication">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Medication</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="padding: 5px">
+          <div class="form-group">
+            <label for="Name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">Medication Type</label>
+            <select class="form-control" id="Medication-Type">
+              <option>Drops</option>
+              <option>Cream</option>
+              <option>Injection</option>
+              <option>Tablet</option>
+              <option>Spray</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info btn-lg rounded-button" data-dismiss="modal">
+          <i class="fa fa-plus" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- The Modal - Room Allocation -->
+<div class="modal fade" id="Room-Allocation">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Room Allocation</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div style="padding: 5px">
+          <table class="table table-striped ClickableTable" id="currentPatientTable">
+            <thead>
+              <tr>
+                <th>Room Number</th>
+                <th>Room Type</th>
+                <th>Patient Name</th>
+                <th>Gender</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>101</td>
+                <td>Private</td>
+                <td>Guy Pearce</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>102</td>
+                <td>Private</td>
+                <td>Bryan Brown</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>103</td>
+                <td>Public</td>
+                <td>Jackie Weaver</td>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <td>103</td>
+                <td>Public</td>
+                <td>Judy Davis</td>
+                <td>Female</td>
               </tr>
             </tbody>
           </table>
