@@ -5,7 +5,7 @@ $(document).ready(function () {
     $('body').fadeIn(1000).removeClass('hidden');
 
     $("#currentPatientTable tr").click(function () {
-        
+
         window.location.href = "Patient.html"
     });
 
